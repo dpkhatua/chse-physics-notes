@@ -1,0 +1,43 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<section style="padding-top:30px;">
+  <span class="tape">From your prescribed textbook</span>
+  <h1>{{ book_title }}</h1>
+  <p class="sub" style="text-align:left;font-size:1.1rem;color:var(--ink-soft);max-width:none;">{{ book_intro }}</p>
+</section>
+
+<div class="chapter-content" style="margin-bottom:30px;">
+  <section class="topic-section" id="syllabus">
+    <h2><span class="sec-no">📜</span> Official Syllabus</h2>
+    <p class="tagline" style="margin-top:-6px;">{{ syllabus_meta }}</p>
+    {% for unit in syllabus_units %}
+    <div class="formula-box" style="font-family:'Kalam',cursive;font-size:1rem;">
+      <div class="f-title">Unit {{ unit.roman }}: {{ unit.name }} {% if unit.periods %}({{ unit.periods }} Periods){% endif %}</div>
+      {% for topic in unit.topics %}<div class="f-line">{{ topic|safe }}</div>{% endfor %}
+    </div>
+    {% endfor %}
+  </section>
+</div>
+
+<div class="chapter-content" style="margin-bottom:60px;">
+  <section class="topic-section" id="contents">
+    <h2><span class="sec-no">📑</span> Contents</h2>
+    <p>Click a chapter to open its notes. Chapters not yet published are greyed out — more are added as they're prepared.</p>
+    <div class="chapter-grid">
+      {% for ch in toc %}
+        {% if ch.ready %}
+        <a class="chapter-card" href="{{ ch.id }}.html" data-chapter-id="{{ ch.id }}">
+          <span class="num">{{ ch.number }}</span><h3>{{ ch.title }}</h3>
+          <p>{{ ch.tagline or '' }}</p>
+        </a>
+        {% else %}
+        <div class="chapter-card" style="opacity:0.5; cursor:default;">
+          <span class="num">{{ ch.number }}</span><h3>{{ ch.title }}</h3>
+          <p>Coming soon</p>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}
