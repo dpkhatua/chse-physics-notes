@@ -1,0 +1,25 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<section style="padding-top:30px;">
+  <span class="tape">Last-minute revision</span>
+  <h1>{{ class_label }} — Formula Sheet</h1>
+  <p class="sub" style="text-align:left;font-size:1.1rem;color:var(--ink-soft);max-width:none;">
+    Every boxed formula from every chapter, in one place. Print this page or skim it the night before the exam.
+  </p>
+  <input class="search-box" type="text" placeholder="🔍 Search a formula or chapter...">
+</section>
+
+{% for ch in chapters %}
+  {% if ch.formulas %}
+  <div class="unit-block chapter-card" data-chapter-id="{{ ch.id }}" style="padding:18px 22px;">
+    <h3><a href="{{ ch.id }}.html">{{ ch.number }}. {{ ch.title }}</a></h3>
+    {% for f in ch.formulas %}
+    <div class="formula-box">
+      <div class="f-title">📐 {{ f.title }}</div>
+      {% for line in f.lines %}<div class="f-line">{{ line|safe }}</div>{% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+{% endfor %}
+{% endblock %}

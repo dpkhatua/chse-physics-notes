@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7. System of Particles and Rotational Motion | Odisha +2 Physics Notes</title>
+<meta name="description" content="When an object isn't a single dot anymore — meet the centre of mass and torque.">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>">
+</head>
+<body data-chapter-id="ch07">
+
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="pencil-emoji">✏️</span> Odisha +2 Physics Notes</a>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+  <nav class="site-nav">
+    <a href="../index.html" class="">Home</a>
+    <a href="../class11/index.html" class="active">Class XI</a>
+    <a href="../class12/index.html" class="">Class XII</a>
+    <a href="../exam-strategy.html" class="">🎯 Exam Strategy</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+
+<div class="chapter-layout">
+  <aside class="toc-box">
+    <h4>📋 On this page</h4>
+    <ol>
+      
+      <li><a href="#sec-1">Centre of Mass</a></li>
+      
+      <li><a href="#sec-2">Torque & Angular Momentum</a></li>
+      
+      <li><a href="#sec-3">Moment of Inertia</a></li>
+      
+      <li><a href="#recap">Quick Recap</a></li>
+      <li><a href="#exam-corner">🎯 Exam Corner</a></li>
+    </ol>
+    <label class="progress-check">
+      <input type="checkbox" id="mark-read"> Mark chapter as read
+    </label>
+    <a class="back-link" href="index.html">&larr; Back to Class XI chapters</a>
+  </aside>
+
+  <article class="chapter-content">
+    <div class="chapter-head">
+      <div class="kicker">Class XI &middot; Unit V &middot; Chapter 7</div>
+      <h1>System of Particles and Rotational Motion</h1>
+      <p class="tagline">When an object isn't a single dot anymore — meet the centre of mass and torque.</p>
+    </div>
+
+    
+    <section class="topic-section" id="sec-1">
+      <h2><span class="sec-no">1</span> Centre of Mass</h2>
+      
+        
+        <div class="diagram-box">
+          <canvas id="ch07-1-centreOfMass" data-diagram="centreOfMass" width="480" height="200"></canvas>
+          <div class="cap">🖊️ Centre of mass of a two-body system lies closer to the heavier mass.</div>
+        </div>
+        
+      
+        
+        <p>The <b>centre of mass (CM)</b> is the point where the entire mass of a system can be imagined concentrated for analysing translational motion. For an isolated system, the CM moves as if all external forces act at that single point.</p>
+        
+      
+        
+        <div class="formula-box">
+          <div class="f-title">📐 Centre of mass of a two-particle system</div>
+          <div class="f-line">xcm = (m1x1 + m2x2) / (m1 + m2)</div>
+        </div>
+        
+      
+        
+        <div class="solved-box">
+          <div class="s-title">✏️ Solved Example</div>
+          <div class="s-problem"><b>Q.</b> Two masses 2 kg and 4 kg are placed at x = 0 and x = 6 m. Find the position of their centre of mass.</div>
+          <ol class="s-steps">
+            <li>xcm = (m1x1 + m2x2)/(m1+m2) = (2×0 + 4×6)/(2+4) = 24/6 = 4 m</li>
+          </ol>
+          <div class="s-answer">🎯 Answer: xcm = 4 m from the 2 kg mass</div>
+        </div>
+        
+      
+    </section>
+    
+    <section class="topic-section" id="sec-2">
+      <h2><span class="sec-no">2</span> Torque & Angular Momentum</h2>
+      
+        
+        <div class="diagram-box">
+          <canvas id="ch07-1-torqueDiagram" data-diagram="torqueDiagram" width="460" height="240"></canvas>
+          <div class="cap">🖊️ Torque τ = r × F — turning effect depends on both the force and its distance from the pivot.</div>
+        </div>
+        
+      
+        
+        <div class="formula-box">
+          <div class="f-title">📐 Rotational quantities</div>
+          <div class="f-line">Torque: τ = r × F  (τ = rF sinθ)</div><div class="f-line">Angular momentum: L = r × p = Iω</div><div class="f-line">Newton's 2nd law for rotation: τ = dL/dt</div>
+        </div>
+        
+      
+        
+        <p>Just like linear momentum, <b>angular momentum is conserved</b> when no external torque acts — this is why a spinning ice-skater speeds up when she pulls her arms in (reducing I increases ω to keep L constant).</p>
+        
+      
+        
+        <div class="solved-box">
+          <div class="s-title">✏️ Solved Example</div>
+          <div class="s-problem"><b>Q.</b> A force of 10 N is applied perpendicular to a spanner at a distance of 0.2 m from the bolt. Find the torque.</div>
+          <ol class="s-steps">
+            <li>τ = rF sinθ, here θ = 90° so sinθ = 1</li><li>τ = 0.2 × 10 × 1 = 2 N·m</li>
+          </ol>
+          <div class="s-answer">🎯 Answer: τ = 2 N·m</div>
+        </div>
+        
+      
+    </section>
+    
+    <section class="topic-section" id="sec-3">
+      <h2><span class="sec-no">3</span> Moment of Inertia</h2>
+      
+        
+        <p><b>Moment of inertia (I)</b> is the rotational equivalent of mass — it measures resistance to change in rotational motion, and depends on how mass is distributed relative to the axis.</p>
+        
+      
+        
+        <div class="formula-box">
+          <div class="f-title">📐 Moment of inertia & radius of gyration</div>
+          <div class="f-line">I = Σmr² = MK²</div><div class="f-line">K = radius of gyration</div>
+        </div>
+        
+      
+        
+        <div class="sticky-note blue">
+          <span class="st-title">Compare: Linear vs Rotational</span>Mass ↔ Moment of Inertia (I) &middot; Velocity ↔ Angular velocity (ω) &middot; Force ↔ Torque (τ) &middot; Momentum ↔ Angular momentum (L)
+        </div>
+        
+      
+        
+        <div class="mistake-box">⚠️ <b>Don't lose marks:</b> Moment of inertia is NOT a fixed property of a body like mass — it changes with the choice of axis. Always state the axis when quoting I.</div>
+        
+      
+    </section>
+    
+
+    <div class="recap-box" id="recap">
+      <h3>⚡ Quick Recap</h3>
+      <ul>
+        <li>Centre of mass moves as if all mass and all external force act there.</li><li>Torque τ = r × F is the rotational analogue of force; τ = Iα.</li><li>Angular momentum L = Iω is conserved when net external torque is zero.</li><li>Moment of inertia depends on mass distribution, not just total mass.</li>
+      </ul>
+    </div>
+
+    
+    <div class="examcorner-box" id="exam-corner">
+      <h3>🎯 Exam Corner — practice in CHSE question style</h3>
+      <p class="ec-note">Grouped the way CHSE papers weight questions. These are practice questions written in the
+        board's style to test this chapter — not lifted from any specific year's paper.</p>
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">1 mark</span>
+          <ol>
+            <li>Define radius of gyration.</li><li>State the principle of conservation of angular momentum.</li>
+          </ol>
+        </div>
+        
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">2 marks</span>
+          <ol>
+            <li>Two point masses 1 kg and 3 kg are 4 m apart. Find the centre of mass from the 1 kg mass.</li><li>Why does a figure skater spin faster when she pulls her arms inward?</li>
+          </ol>
+        </div>
+        
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">3 marks</span>
+          <ol>
+            <li>Define torque and angular momentum, and derive the relation τ = dL/dt.</li>
+          </ol>
+        </div>
+        
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">5 marks</span>
+          <ol>
+            <li>Define moment of inertia and radius of gyration. Derive the centre of mass formula for a two-particle system, and find the CM of masses 3 kg, 5 kg placed at (0,0) and (4,0) m.</li>
+          </ol>
+        </div>
+        
+      
+    </div>
+    
+
+    <div class="chapter-nav">
+      <a href="ch06.html">&larr; Work, Energy and Power</a>
+      <a href="ch08.html">Gravitation &rarr;</a>
+    </div>
+  </article>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <p>Made with ✏️ for CHSE Odisha +2 Physics students &middot; Free forever, no login needed.</p>
+  <p style="font-size:0.85rem;">Notes follow the CHSE Odisha rationalised Physics syllabus (Class XI &amp; XII, 2023–24). Please cross-check with your school textbook &amp; latest board circulars before exams.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rough.js/4.6.6/rough.umd.min.js"></script>
+<script src="../assets/js/sketch.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

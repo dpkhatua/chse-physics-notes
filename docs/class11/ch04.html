@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4. Motion in a Plane | Odisha +2 Physics Notes</title>
+<meta name="description" content="Motion gets a second dimension — enter vectors, projectiles and circles.">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✏️</text></svg>">
+</head>
+<body data-chapter-id="ch04">
+
+<header class="site-header">
+  <a class="brand" href="../index.html"><span class="pencil-emoji">✏️</span> Odisha +2 Physics Notes</a>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+  <nav class="site-nav">
+    <a href="../index.html" class="">Home</a>
+    <a href="../class11/index.html" class="active">Class XI</a>
+    <a href="../class12/index.html" class="">Class XII</a>
+    <a href="../exam-strategy.html" class="">🎯 Exam Strategy</a>
+  </nav>
+</header>
+
+<main class="page-wrap">
+
+<div class="chapter-layout">
+  <aside class="toc-box">
+    <h4>📋 On this page</h4>
+    <ol>
+      
+      <li><a href="#sec-1">Scalars, Vectors & Vector Addition</a></li>
+      
+      <li><a href="#sec-2">Projectile Motion</a></li>
+      
+      <li><a href="#sec-3">Uniform Circular Motion</a></li>
+      
+      <li><a href="#recap">Quick Recap</a></li>
+      <li><a href="#exam-corner">🎯 Exam Corner</a></li>
+    </ol>
+    <label class="progress-check">
+      <input type="checkbox" id="mark-read"> Mark chapter as read
+    </label>
+    <a class="back-link" href="index.html">&larr; Back to Class XI chapters</a>
+  </aside>
+
+  <article class="chapter-content">
+    <div class="chapter-head">
+      <div class="kicker">Class XI &middot; Unit II &middot; Chapter 4</div>
+      <h1>Motion in a Plane</h1>
+      <p class="tagline">Motion gets a second dimension — enter vectors, projectiles and circles.</p>
+    </div>
+
+    
+    <section class="topic-section" id="sec-1">
+      <h2><span class="sec-no">1</span> Scalars, Vectors & Vector Addition</h2>
+      
+        
+        <p>A <b>scalar</b> has only magnitude (mass, speed, temperature). A <b>vector</b> has magnitude AND direction (displacement, velocity, force). Vectors are added using the <b>triangle law</b> or <b>parallelogram law</b> — you can't just add magnitudes unless they're in the same direction!</p>
+        
+      
+        
+        <div class="diagram-box">
+          <canvas id="ch04-2-vectorTriangle" data-diagram="vectorTriangle" width="480" height="240"></canvas>
+          <div class="cap">🖊️ Triangle law: place vector B at the tip of A, the resultant R runs from A's tail to B's tip.</div>
+        </div>
+        
+      
+        
+        <div class="formula-box">
+          <div class="f-title">📐 Resolving a vector into components</div>
+          <div class="f-line">Ax = A cos θ   (x-component)</div><div class="f-line">Ay = A sin θ   (y-component)</div><div class="f-line">A = √(Ax² + Ay²) ,  θ = tan⁻¹(Ay/Ax)</div>
+        </div>
+        
+      
+        
+        <div class="solved-box">
+          <div class="s-title">✏️ Solved Example</div>
+          <div class="s-problem"><b>Q.</b> Two forces of 6 N and 8 N act at right angles to each other. Find the magnitude and direction of the resultant.</div>
+          <ol class="s-steps">
+            <li>Since they're perpendicular, R = √(6² + 8²) = √(36+64) = √100 = 10 N</li><li>Direction: tanθ = 8/6 = 1.33 → θ = tan⁻¹(1.33) ≈ 53° from the 6 N force</li>
+          </ol>
+          <div class="s-answer">🎯 Answer: R = 10 N, at 53° from the 6 N force</div>
+        </div>
+        
+      
+    </section>
+    
+    <section class="topic-section" id="sec-2">
+      <h2><span class="sec-no">2</span> Projectile Motion</h2>
+      
+        
+        <p>Throw something at an angle and it follows a <b>parabolic path</b> — this is projectile motion. The trick: split it into two <i>independent</i> motions — horizontal (constant velocity, no acceleration) and vertical (uniform acceleration = −g).</p>
+        
+      
+        
+        <div class="diagram-box">
+          <canvas id="ch04-2-projectileMotion" data-diagram="projectileMotion" width="480" height="240"></canvas>
+          <div class="cap">🖊️ Horizontal velocity stays constant; gravity curves the path into a parabola.</div>
+        </div>
+        
+      
+        
+        <div class="derivation-box">
+          <div class="d-title">🧮 Derivation: Range of a projectile</div>
+          <div class="d-given"><b>Given / Setup:</b> A body is projected with speed u at angle θ to the horizontal.</div>
+          <ol class="d-steps">
+            <li>Time of flight T = 2u sinθ / g (time for vertical displacement to return to zero)</li><li>Horizontal range R = horizontal velocity × time of flight = (u cosθ)(2u sinθ/g)</li><li>R = (2u² sinθ cosθ)/g = u² sin2θ / g   (using 2sinθcosθ = sin2θ)</li>
+          </ol>
+          <div class="d-result">✅ R = u² sin2θ / g — maximum when θ = 45° (sin2θ = 1)</div>
+        </div>
+        
+      
+        
+        <div class="formula-box">
+          <div class="f-title">📐 Key projectile results (launch angle θ, speed u)</div>
+          <div class="f-line">Time of flight: T = 2u sinθ / g</div><div class="f-line">Maximum height: H = u² sin²θ / 2g</div><div class="f-line">Range: R = u² sin2θ / g</div><div class="f-line">Range is maximum when θ = 45°</div>
+        </div>
+        
+      
+        
+        <div class="solved-box">
+          <div class="s-title">✏️ Solved Example</div>
+          <div class="s-problem"><b>Q.</b> A ball is projected at 30° with the horizontal at 20 m/s. Find the range and maximum height (g = 10 m/s²).</div>
+          <ol class="s-steps">
+            <li>R = u²sin2θ/g = (20²)(sin60°)/10 = (400)(0.866)/10 = 34.6 m</li><li>H = u²sin²θ/2g = (400)(0.25)/20 = 5 m</li>
+          </ol>
+          <div class="s-answer">🎯 Answer: R ≈ 34.6 m, H = 5 m</div>
+        </div>
+        
+      
+        
+        <div class="mistake-box">⚠️ <b>Don't lose marks:</b> Forgetting that horizontal velocity (u cosθ) stays CONSTANT throughout the flight — many students wrongly apply g to the horizontal component too.</div>
+        
+      
+    </section>
+    
+    <section class="topic-section" id="sec-3">
+      <h2><span class="sec-no">3</span> Uniform Circular Motion</h2>
+      
+        
+        <p>Moving in a circle at <b>constant speed</b> still means accelerating — because direction keeps changing! This acceleration points toward the centre: <b>centripetal acceleration</b>.</p>
+        
+      
+        
+        <div class="derivation-box">
+          <div class="d-title">🧮 Derivation: Centripetal acceleration</div>
+          <div class="d-given"><b>Given / Setup:</b> A particle moves in a circle of radius r with constant speed v.</div>
+          <ol class="d-steps">
+            <li>In a small time Δt, velocity direction changes by a small angle Δθ, where Δθ = Δs/r = vΔt/r.</li><li>The change in velocity vector Δv has magnitude vΔθ (for small angles), directed toward the centre.</li><li>Acceleration a = Δv/Δt = v(Δθ)/Δt = v × (v/r) = v²/r</li>
+          </ol>
+          <div class="d-result">✅ a = v²/r, directed toward the centre</div>
+        </div>
+        
+      
+        
+        <div class="formula-box">
+          <div class="f-title">📐 Circular motion</div>
+          <div class="f-line">Centripetal acceleration: a = v²/r = ω²r</div><div class="f-line">ω (angular velocity) = v/r = 2π/T</div>
+        </div>
+        
+      
+        
+        <div class="sticky-note blue">
+          <span class="st-title">Common confusion</span>Centripetal force is NOT a new/separate force — it's just the name for whichever real force (tension, gravity, friction, normal force) happens to point toward the centre.
+        </div>
+        
+      
+    </section>
+    
+
+    <div class="recap-box" id="recap">
+      <h3>⚡ Quick Recap</h3>
+      <ul>
+        <li>Vectors add tip-to-tail (triangle law); resolve into perpendicular components to solve problems easily.</li><li>Projectile motion = constant-velocity horizontal + uniformly accelerated vertical motion, independently.</li><li>Range is max at 45°; time of flight depends only on the vertical component of velocity.</li><li>Uniform circular motion has constant speed but changing velocity → centripetal acceleration v²/r toward the centre.</li>
+      </ul>
+    </div>
+
+    
+    <div class="examcorner-box" id="exam-corner">
+      <h3>🎯 Exam Corner — practice in CHSE question style</h3>
+      <p class="ec-note">Grouped the way CHSE papers weight questions. These are practice questions written in the
+        board's style to test this chapter — not lifted from any specific year's paper.</p>
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">1 mark</span>
+          <ol>
+            <li>What is the angle between velocity and acceleration at the topmost point of a projectile's path?</li><li>Define angular velocity and give its SI unit.</li>
+          </ol>
+        </div>
+        
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">2 marks</span>
+          <ol>
+            <li>State the parallelogram law of vector addition and write the formula for the magnitude of the resultant.</li><li>A stone tied to a string of length 1 m is whirled in a circle at 2 revolutions per second. Find its centripetal acceleration.</li>
+          </ol>
+        </div>
+        
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">3 marks</span>
+          <ol>
+            <li>Derive the expression for maximum height and time of flight of a projectile projected at angle θ with speed u.</li>
+          </ol>
+        </div>
+        
+      
+        
+        
+        <div class="ec-group">
+          <span class="ec-marks">5 marks</span>
+          <ol>
+            <li>Derive the expression for the range of a projectile and show that the range is maximum at 45°. A cricket ball is hit at 25 m/s at 37° above horizontal — find its range, time of flight and maximum height (g=10 m/s², sin37°=0.6, cos37°=0.8).</li>
+          </ol>
+        </div>
+        
+      
+    </div>
+    
+
+    <div class="chapter-nav">
+      <a href="ch03.html">&larr; Motion in a Straight Line</a>
+      <a href="ch05.html">Laws of Motion &rarr;</a>
+    </div>
+  </article>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <p>Made with ✏️ for CHSE Odisha +2 Physics students &middot; Free forever, no login needed.</p>
+  <p style="font-size:0.85rem;">Notes follow the CHSE Odisha rationalised Physics syllabus (Class XI &amp; XII, 2023–24). Please cross-check with your school textbook &amp; latest board circulars before exams.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rough.js/4.6.6/rough.umd.min.js"></script>
+<script src="../assets/js/sketch.js"></script>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

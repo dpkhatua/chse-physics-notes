@@ -1,0 +1,25 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<section style="padding-top:30px;">
+  <span class="tape">{{ class_label }}</span>
+  <h1>{{ class_title }}</h1>
+  <p class="sub" style="text-align:left;font-size:1.1rem;color:var(--ink-soft);max-width:none;">{{ class_intro }}</p>
+  <input class="search-box" type="text" placeholder="🔍 Search a chapter, e.g. 'gravitation'...">
+  <p><a href="formula-sheet.html">📐 Jump to the consolidated {{ class_label }} Formula Sheet →</a></p>
+</section>
+
+{% for unit in units %}
+<div class="unit-block">
+  <span class="unit-title">Unit {{ unit.roman }}: {{ unit.name }}</span>
+  <div class="chapter-grid">
+    {% for ch in unit.chapters %}
+    <a class="chapter-card" href="{{ ch.id }}.html" data-chapter-id="{{ ch.id }}">
+      <span class="num">{{ ch.number }}</span><h3>{{ ch.title }}</h3>
+      <p>{{ ch.tagline }}</p>
+      <div class="tags">{% for t in ch.tags %}<span>{{ t }}</span>{% endfor %}</div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
